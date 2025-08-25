@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why Jacaranda - Proposal Penawaran Asesmen Online</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .section {
+            min-height: 100vh;
+            scroll-snap-align: start;
+        }
+        .container-snap {
+            scroll-snap-type: y mandatory;
+            overflow-y: scroll;
+            height: 100vh;
+        }
+        .gradient-text {
+            background: -webkit-linear-gradient(45deg, #4F46E5, #A855F7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .icon-bg {
+            background-color: rgba(79, 70, 229, 0.1);
+        }
+        .card-hover-effect {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .card-hover-effect:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        /* Animation for elements on scroll */
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s cubic-bezier(0.6, 0.2, 0.1, 1), transform 0.8s cubic-bezier(0.6, 0.2, 0.1, 1);
+        }
+        .fade-in-up.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-slate-900 text-white">
+
+    <div class="container-snap">
+
+        <!-- Section 1: Hero -->
+        <section id="hero" class="section flex items-center justify-center p-8 bg-grid-slate-800 relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-900 to-indigo-900/50"></div>
+            <div class="text-center z-10">
+                <h1 class="text-5xl md:text-7xl font-bold mb-4 fade-in-up is-visible">
+                    <span class="gradient-text">Why Jacaranda</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-slate-300 max-w-3xl mx-auto fade-in-up is-visible" style="transition-delay: 150ms;">
+                    Transformasi Strategis Asesmen Talenta: Dari Kertas ke Platform Digital yang Presisi dan Ilmiah.
+                </p>
+                <div class="mt-12 animate-bounce">
+                    <a href="#digital-leap" class="text-slate-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Paper vs Digital -->
+        <section id="digital-leap" class="section flex items-center justify-center p-8 bg-grid-slate-800/50">
+            <div class="container mx-auto max-w-6xl">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 fade-in-up">Lompatan dari Kertas ke Digital</h2>
+                <p class="text-slate-400 text-center mb-12 max-w-3xl mx-auto fade-in-up" style="transition-delay: 150ms;">Asesmen online bukan sekadar digitalisasi, melainkan sebuah revolusi dalam efisiensi, objektivitas, dan jangkauan rekrutmen.</p>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Paper-Based -->
+                    <div class="border border-slate-700 rounded-2xl p-6 relative card-hover-effect fade-in-up" style="transition-delay: 300ms;">
+                        <div class="absolute top-4 right-4 bg-red-500/10 text-red-400 px-3 py-1 rounded-full text-sm font-medium">Tradisional</div>
+                        <h3 class="text-2xl font-semibold mb-4 text-slate-300">Asesmen Paper-Based</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3 text-red-400 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                                <span><strong class="text-white">Biaya Tinggi:</strong> Melibatkan biaya cetak, logistik, dan sewa tempat.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3 text-red-400 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                                <span><strong class="text-white">Skoring Manual & Lambat:</strong> Memakan waktu berhari-hari dan rentan human error.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3 text-red-400 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                                <span><strong class="text-white">Jangkauan Terbatas:</strong> Terikat oleh batasan geografis dan jadwal yang kaku.</span>
+                            </li>
+                             <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3 text-red-400 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                                <span><strong class="text-white">Subjektif & Bias:</strong> Penilaian manual rentan terhadap bias penilai.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Online Assessment -->
+                    <div class="border border-indigo-500 rounded-2xl p-6 relative bg-indigo-900/20 card-hover-effect fade-in-up" style="transition-delay: 450ms;">
+                        <div class="absolute top-4 right-4 bg-green-500/10 text-green-400 px-3 py-1 rounded-full text-sm font-medium">Jacaranda</div>
+                        <h3 class="text-2xl font-semibold mb-4 text-white">Asesmen Online Jacaranda</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3 text-green-400 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                                <span><strong class="text-white">Akses Online & Administrasi Mudah:</strong> Skoring instan, akurat, dan dapat diakses dari mana saja.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3 text-green-400 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                                <span><strong class="text-white">Pengukuran Adaptif (CAT):</strong> Beberapa alat tes kami menyesuaikan tingkat kesulitan soal dengan kemampuan peserta secara real-time.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3 text-green-400 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                                <span><strong class="text-white">Objektif & Berbasis Data:</strong> Keputusan adil berdasarkan standar yang konsisten untuk semua kandidat.</span>
+                            </li>
+                        </ul>
+                        <div class="mt-6 pt-4 border-t border-slate-700 text-center text-indigo-300">
+                           Kapasitas Server Stabil: Optimal untuk <strong>250 pengguna</strong> bersamaan.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: TICT 2 -->
+        <section id="tict" class="section flex items-center justify-center p-8 bg-slate-900">
+            <div class="container mx-auto max-w-6xl grid md:grid-cols-2 gap-12 items-center">
+                <div class="text-center md:text-left fade-in-up">
+                    <span class="text-indigo-400 font-semibold">TICT (Triadic Intelligence Computerized Test)</span>
+                    <h2 class="text-3xl md:text-4xl font-bold my-3">Pengukuran Kognitif Adaptif & Akurat</h2>
+                    <p class="text-slate-400 mb-6">TICT menggunakan metode CAT (*Computerized Adaptive Test*) untuk menyajikan soal yang sesuai dengan kemampuan peserta, sehingga meningkatkan akurasi pengukuran secara signifikan.</p>
+                    <div class="space-y-4">
+                        <div class="flex items-center p-4 rounded-lg bg-slate-800">
+                            <div class="p-3 rounded-lg icon-bg mr-4"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-300" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9V3" /></svg></div>
+                            <div>
+                                <h4 class="font-semibold text-lg">Bebas Budaya (Culture-Free)</h4>
+                                <p class="text-slate-400 text-sm">Hanya menggunakan stimulus numerik dan 2D, tanpa bias verbal.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center p-4 rounded-lg bg-slate-800">
+                            <div class="p-3 rounded-lg icon-bg mr-4"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-300" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" /></svg></div>
+                            <div>
+                                <h4 class="font-semibold text-lg">Sangat Aman</h4>
+                                <p class="text-slate-400 text-sm">Algoritma CAT mencegah kebocoran soal dan efek belajar.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center items-center w-full max-w-md fade-in-up" style="transition-delay: 150ms;">
+                    <!-- Visualisasi CAT Baru -->
+                    <p class="font-semibold text-lg mb-4">Logika Tes Adaptif (CAT)</p>
+                    <div class="w-full space-y-2">
+                        <div class="bg-slate-800 p-4 rounded-lg text-center">
+                            <p>Soal Awal (Tingkat Sedang)</p>
+                        </div>
+                        <div class="flex justify-center">
+                            <svg class="w-6 h-6 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+                        </div>
+                        <div class="bg-slate-700 p-4 rounded-lg text-center">
+                            <p>Jawaban Kandidat</p>
+                        </div>
+                        <div class="flex justify-around items-center h-12">
+                            <div class="w-1/2 h-px bg-slate-500"></div>
+                            <div class="w-1/2 h-px bg-slate-500"></div>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4 text-center">
+                            <div>
+                                <p class="text-green-400 font-semibold">BENAR</p>
+                                <svg class="w-6 h-6 text-slate-500 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+                                <div class="bg-green-500/10 border border-green-500 p-3 rounded-lg mt-1">
+                                    <p>Soal Berikutnya (Lebih Sulit)</p>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="text-red-400 font-semibold">SALAH</p>
+                                <svg class="w-6 h-6 text-slate-500 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+                                <div class="bg-red-500/10 border border-red-500 p-3 rounded-lg mt-1">
+                                    <p>Soal Berikutnya (Lebih Mudah)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: GSAT -->
+        <section id="gsat" class="section flex items-center justify-center p-8 bg-grid-slate-800/50">
+            <div class="container mx-auto max-w-6xl grid md:grid-cols-2 gap-12 items-center">
+                 <div class="flex justify-center items-center fade-in-up">
+                    <!-- Visualisasi Radar Chart untuk 4 Domain (Segi Empat) -->
+                    <div class="relative w-80 h-80">
+                        <svg class="w-full h-full" viewBox="0 0 100 100">
+                            <!-- Radar Grid -->
+                            <polygon points="50,10 90,50 50,90 10,50" fill="none" stroke="#4A5568" stroke-width="0.5"/>
+                            <polygon points="50,25 75,50 50,75 25,50" fill="rgba(79, 70, 229, 0.1)" stroke="#4A5568" stroke-width="0.5"/>
+                            <line x1="50" y1="10" x2="50" y2="90" stroke="#4A5568" stroke-width="0.5"/>
+                            <line x1="10" y1="50" x2="90" y2="50" stroke="#4A5568" stroke-width="0.5"/>
+                            <!-- Data Polygon -->
+                            <polygon class="radar-chart-line" points="50,15 85,50 50,80 20,50" fill="rgba(168, 85, 247, 0.3)" stroke="#A855F7" stroke-width="2"/>
+                            <!-- Labels -->
+                            <text x="50" y="8" font-size="6" fill="#CBD5E1" text-anchor="middle">Kecepatan</text>
+                            <text x="92" y="53" font-size="6" fill="#CBD5E1" text-anchor="end">Ketelitian</text>
+                            <text x="50" y="98" font-size="6" fill="#CBD5E1" text-anchor="middle">Ketahanan</text>
+                            <text x="8" y="53" font-size="6" fill="#CBD5E1" text-anchor="start">Keajegan</text>
+                        </svg>
+                    </div>
+                </div>
+                <div class="text-center md:text-left fade-in-up" style="transition-delay: 150ms;">
+                    <span class="text-indigo-400 font-semibold">GSAT (Galang-Satrio Adaptability Test)</span>
+                    <h2 class="text-3xl md:text-4xl font-bold my-3">Profil Kemampuan Adaptasi Individu</h2>
+                    <p class="text-slate-400 mb-6">Tes biopsikometrik online untuk mengukur kemampuan adaptasi individu terhadap tekanan dan perubahan. GSAT memberikan gambaran objektif performa seseorang saat menghadapi tantangan nyata.</p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="p-3 rounded-lg bg-slate-800 text-center">
+                            <h4 class="font-semibold">Kecepatan</h4>
+                        </div>
+                        <div class="p-3 rounded-lg bg-slate-800 text-center">
+                            <h4 class="font-semibold">Ketelitian</h4>
+                        </div>
+                        <div class="p-3 rounded-lg bg-slate-800 text-center">
+                            <h4 class="font-semibold">Ketahanan</h4>
+                        </div>
+                        <div class="p-3 rounded-lg bg-slate-800 text-center">
+                            <h4 class="font-semibold">Keajegan</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: MSJT-2 -->
+        <section id="msjt" class="section flex items-center justify-center p-8 bg-slate-900">
+            <div class="container mx-auto max-w-6xl grid md:grid-cols-2 gap-12 items-center">
+                <div class="text-center md:text-left fade-in-up">
+                    <span class="text-indigo-400 font-semibold">MSJT-2 (Managerial Situational Judgement Test)</span>
+                    <h2 class="text-3xl md:text-4xl font-bold my-3">Memprediksi Perilaku di Konteks Nyata</h2>
+                    <p class="text-slate-400 mb-6">MSJT-2 mengukur kompetensi manajerial dengan stimulus situasi kerja yang relevan, sehingga dapat memprediksi respons, perilaku, dan sikap individu dalam konteks nyata pada pekerjaan.</p>
+                    <div class="space-y-4">
+                        <div class="flex items-center p-4 rounded-lg bg-slate-800">
+                            <div class="p-3 rounded-lg icon-bg mr-4"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-300" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 14v6m-3-3h6M6 10h2a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v2a2 2 0 002 2zm10 0h2a2 2 0 002-2V6a2 2 0 00-2-2h-2a2 2 0 00-2 2v2a2 2 0 002 2zM6 20h2a2 2 0 002-2v-2a2 2 0 00-2-2H6a2 2 0 00-2 2v2a2 2 0 002 2z" /></svg></div>
+                            <div>
+                                <h4 class="font-semibold text-lg">Prediksi Respons Nyata</h4>
+                                <p class="text-slate-400 text-sm">Mengungkap perilaku, sikap, dan pengetahuan individu.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center p-4 rounded-lg bg-slate-800">
+                            <div class="p-3 rounded-lg icon-bg mr-4"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-300" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg></div>
+                            <div>
+                                <h4 class="font-semibold text-lg">Stimulus Sesuai Konteks</h4>
+                                <p class="text-slate-400 text-sm">Skenario relevan dengan situasi pekerjaan di dunia nyata.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center items-center fade-in-up" style="transition-delay: 150ms;">
+                    <!-- Visualisasi Skenario -->
+                    <div class="w-full max-w-md p-6 rounded-2xl bg-slate-800 border border-slate-700 card-hover-effect">
+                        <p class="text-sm text-slate-400">Skenario:</p>
+                        <p class="mb-4 font-medium">Anda menerima keluhan dari dua anggota tim yang berbeda mengenai beban kerja yang tidak seimbang. Apa tindakan pertama Anda?</p>
+                        <div class="space-y-3 text-sm">
+                            <div class="p-3 rounded-lg bg-slate-700/50">A. Meminta keduanya untuk menyelesaikan masalah secara internal.</div>
+                            <div class="p-3 rounded-lg bg-indigo-900/50 border border-indigo-500">B. Mengadakan pertemuan terpisah dengan masing-masing untuk memahami perspektif mereka.</div>
+                            <div class="p-3 rounded-lg bg-slate-700/50">C. Langsung mendistribusikan ulang tugas berdasarkan intuisi Anda.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: ALA -->
+        <section id="ala" class="section flex items-center justify-center p-8 bg-grid-slate-800/50">
+            <div class="container mx-auto max-w-6xl grid md:grid-cols-2 gap-12 items-center">
+                <div class="flex justify-center items-center fade-in-up">
+                    <!-- Visualisasi 360 Degree -->
+                    <div class="relative w-80 h-80">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="w-24 h-24 bg-indigo-500 rounded-full flex items-center justify-center text-center shadow-lg shadow-indigo-500/30">
+                                <span class="font-bold text-white">Leader</span>
+                            </div>
+                        </div>
+                        <div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
+                            <div class="w-16 h-16 bg-slate-700 rounded-full flex items-center justify-center mb-1"><span class="text-sm">Atasan</span></div>
+                        </div>
+                        <div class="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 text-center">
+                            <div class="w-16 h-16 bg-slate-700 rounded-full flex items-center justify-center mb-1"><span class="text-sm">Bawahan</span></div>
+                        </div>
+                        <div class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 text-center">
+                            <div class="w-16 h-16 bg-slate-700 rounded-full flex items-center justify-center mb-1"><span class="text-sm">Diri Sendiri</span></div>
+                        </div>
+                        <div class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 text-center">
+                            <div class="w-16 h-16 bg-slate-700 rounded-full flex items-center justify-center mb-1"><span class="text-sm">Rekan</span></div>
+                        </div>
+                        <svg class="absolute inset-0 w-full h-full" viewBox="0 0 100 100">
+                            <defs><marker id="arrowhead" markerWidth="5" markerHeight="3.5" refX="0" refY="1.75" orient="auto"><polygon points="0 0, 5 1.75, 0 3.5" fill="#6366F1" /></marker></defs>
+                            <line x1="50" y1="25" x2="50" y2="35" stroke="#6366F1" stroke-width="1" marker-end="url(#arrowhead)" /><line x1="50" y1="75" x2="50" y2="65" stroke="#6366F1" stroke-width="1" marker-end="url(#arrowhead)" /><line x1="25" y1="50" x2="35" y2="50" stroke="#6366F1" stroke-width="1" marker-end="url(#arrowhead)" /><line x1="75" y1="50" x2="65" y2="50" stroke="#6366F1" stroke-width="1" marker-end="url(#arrowhead)" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="text-center md:text-left fade-in-up" style="transition-delay: 150ms;">
+                    <span class="text-indigo-400 font-semibold">ALA (Advanced Leadership Assessment)</span>
+                    <h2 class="text-3xl md:text-4xl font-bold my-3">Identifikasi Gaya Kepemimpinan Holistik</h2>
+                    <p class="text-slate-400 mb-6">Mengidentifikasi gaya kepemimpinan individu terkait hubungan dengan tim dan gaya pengambilan keputusan, mengukur kompetensi mengarahkan, mengembangkan, dan memimpin orang lain.</p>
+                     <div class="space-y-4">
+                        <div class="flex items-center p-4 rounded-lg bg-slate-800">
+                            <div class="p-3 rounded-lg icon-bg mr-4"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-300" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg></div>
+                            <div>
+                                <h4 class="font-semibold text-lg">360-Degree Assessment</h4>
+                                <p class="text-slate-400 text-sm">Laporan komprehensif membandingkan penilaian diri dengan rater lain.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center p-4 rounded-lg bg-slate-800">
+                            <div class="p-3 rounded-lg icon-bg mr-4"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-300" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg></div>
+                            <div>
+                                <h4 class="font-semibold text-lg">Aplikasi Cepat & Tepat</h4>
+                                <p class="text-slate-400 text-sm">Hasil laporan cepat untuk kebutuhan konseling, coaching, dll.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 7: WCA -->
+        <section id="wca" class="section flex items-center justify-center p-8 bg-slate-900">
+            <div class="container mx-auto max-w-6xl grid md:grid-cols-2 gap-12 items-center">
+                <div class="text-center md:text-left fade-in-up">
+                    <span class="text-indigo-400 font-semibold">WCA (Working Climate Assessment)</span>
+                    <h2 class="text-3xl md:text-4xl font-bold my-3">Memahami Iklim & Kesehatan Organisasi</h2>
+                    <p class="text-slate-400 mb-6">Mengukur iklim organisasi dari perspektif karyawan untuk memahami beragam aspek yang memengaruhi motivasi, keterlibatan, produktivitas, dan kepuasan kerja.</p>
+                    <div class="space-y-4">
+                        <div class="flex items-center p-4 rounded-lg bg-slate-800">
+                            <div class="p-3 rounded-lg icon-bg mr-4"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-300" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a2 2 0 01-2 2H6a2 2 0 01-2-2V4z" /></svg></div>
+                            <div>
+                                <h4 class="font-semibold text-lg">Pengukuran Komprehensif</h4>
+                                <p class="text-slate-400 text-sm">Mengungkap aspek psikologis yang memengaruhi kondisi karyawan.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center p-4 rounded-lg bg-slate-800">
+                            <div class="p-3 rounded-lg icon-bg mr-4"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-300" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg></div>
+                            <div>
+                                <h4 class="font-semibold text-lg">Dasar Intervensi Strategis</h4>
+                                <p class="text-slate-400 text-sm">Data untuk meningkatkan motivasi, produktivitas & kepuasan kerja.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center items-center fade-in-up" style="transition-delay: 150ms;">
+                    <!-- Visualisasi Iklim Kerja -->
+                    <div class="grid grid-cols-2 gap-4 w-full max-w-md">
+                        <div class="p-4 rounded-lg bg-slate-800 text-center card-hover-effect">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mx-auto mb-2 text-indigo-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+                            <span class="font-semibold">Motivasi</span>
+                        </div>
+                        <div class="p-4 rounded-lg bg-slate-800 text-center card-hover-effect">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mx-auto mb-2 text-indigo-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M15 21v-1a6 6 0 00-1-3.722" /></svg>
+                            <span class="font-semibold">Keterlibatan</span>
+                        </div>
+                        <div class="p-4 rounded-lg bg-slate-800 text-center card-hover-effect">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mx-auto mb-2 text-indigo-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg>
+                            <span class="font-semibold">Produktivitas</span>
+                        </div>
+                        <div class="p-4 rounded-lg bg-slate-800 text-center card-hover-effect">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mx-auto mb-2 text-indigo-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                            <span class="font-semibold">Kepuasan Kerja</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Section 8: Closing -->
+        <section id="closing" class="section flex items-center justify-center p-8 bg-grid-slate-800 relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-indigo-900/30 to-slate-900"></div>
+            <div class="text-center z-10 max-w-4xl">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 fade-in-up">
+                    Asesmen Presisi. <span class="gradient-text">Talenta Unggul.</span>
+                </h2>
+                <p class="text-xl text-slate-300 mb-8 fade-in-up" style="transition-delay: 150ms;">
+                    Bermitra dengan Jacaranda untuk mengubah data asesmen menjadi keunggulan kompetitif Anda.
+                </p>
+                <a href="https://wa.me/6282133623300?text=Halo%2C%20saya%20tertarik%20dengan%20layanan%20asesmen%20Jacaranda." target="_blank" class="bg-indigo-600 hover:bg-indigo-500 text-white font-bold py-3 px-8 rounded-full transition duration-300 fade-in-up" style="transition-delay: 300ms;">
+                    Konsultasikan Kebutuhan Anda
+                </a>
+            </div>
+        </section>
+
+    </div>
+
+    <script>
+        // This script adds a 'is-visible' class to elements when they scroll into view
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                }
+            });
+        }, {
+            threshold: 0.1 // Trigger when 10% of the element is visible
+        });
+
+        // Observe all elements with the 'fade-in-up' class
+        document.querySelectorAll('.fade-in-up').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+
+</body>
+</ht
